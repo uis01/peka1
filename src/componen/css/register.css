@@ -1,58 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
-.container {
+/* .container {
   margin: 0 30px;
   display: block;
   padding: 0 100px;
   overflow: auto;
-}
+} */
 
-.container img {
-  margin-top: 80px;
-  display: flex;
-  float: left;
-  width: 600px;
-  height: 600px;
-}
 
-.container .form {
-  font-family: 'poppins';
+
+
+
+.containerForm .form {
+  font-family: "poppins";
   margin-top: 0 auto;
   width: 350px;
   float: right;
 }
 
-.container .form .text1{
+.containerForm .form .text1 {
   font-weight: bolder;
   font-size: 35px;
   margin-bottom: -10px;
+  color: black;
 }
 
-.container .form .text2{
+.containerForm .form .text2 {
   font-size: 18px;
+  margin: 0px;
+  color: black;
 }
 
-.container .form label{
+.containerForm .form label {
   font-size: 15px;
 }
 
-.container .form input {
+.containerForm .form input {
   border: 1px solid black;
   width: 350px;
   height: 38px;
   border-radius: 5px;
   margin-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid;
 }
 
-.container .form input[type=text], .container .form input[type=password], .container .form input[type=number]{
+.containerForm .form input[type="text"],
+.containerForm .form input[type="password"],
+.containerForm .form input[type="number"] {
   font-size: 16px;
   padding: 0 10px;
 }
 
-.container .form input[type=submit]{
+.containerForm .form input[type="submit"] {
   width: 300px;
   color: white;
-  background: #148081;
+  background:  #105c8c;
   border: none;
   border-radius: 5px;
   display: block;
@@ -61,12 +64,44 @@
   cursor: pointer;
 }
 
-.container .form input[type="submit"]:hover {
-    background: #0f6666;
+.containerForm .form input[type="submit"]:hover {
+  background: #449ed6;
 }
 
-.container .form .text3{
+.containerForm .form .text3 {
   margin-top: -10px;
   width: 100%;
   text-align: center;
+  color: black;
+}
+
+
+.containerRegister {
+  display: flex;
+  flex-direction: row;
+}
+.containerForm {
+  height: 100vh;
+  width: 50vw;
+  color: aliceblue;
+  margin-top: -50px;
+  display: flex;
+  justify-content: start;
+}
+
+.containerImg {
+  height: 100vh;
+  background-color: #105C8C;
+  width: 50vw;
+}
+
+.containerImg img {
+  margin-top: 80px;
+  width: 30vw;
+  height: 30vh;
+}
+
+.form {
+  margin-left: 40px;
+  color: black;
 }
