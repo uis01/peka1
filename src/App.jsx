@@ -6,7 +6,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LandingPage from "./componen/landingPage";
 import Login from "./componen/login";
 import Register from "./componen/register";
-import Register2 from './componen/register2';
+import Dashboard from './componen/dashboard';
+import TentangKami from './componen/tentangKami';
+import Database from './componen/Database';
+import Editor from './componen/Editor';
 
 function App() {
   return (
@@ -18,7 +21,13 @@ function App() {
         </Route>
         <Route path="Register" element={<Register />}>
         </Route>
-        <Route path="Register2" element={<Register2 />}>
+        <Route path="Dashboard" element={<Dashboard />}>
+        </Route>
+        <Route path="TentangKami" element={<TentangKami />}>
+        </Route>
+        <Route path="Editor" element={<Editor />}>
+        </Route>
+        <Route path="Database" element={<Database />}>
         </Route>
       </Routes>
     </Router>

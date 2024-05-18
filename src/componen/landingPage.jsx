@@ -15,20 +15,20 @@ function LandingPage() {
     navigate(path);
   };
   return (
-    <div className='landingPage-container'>
-        <div className='landingPage-left'>
-            <div className='landingPage-btn'>
+    <div className='containerLanding'>
+        <div className='left'>
+            <div className='btn'>
                 <a href="#"><button onClick={() => navigateTo('/register')} className='up'>Register</button></a>
                 <a href="#"><button onClick={() => navigateTo('/login')} className='down'>Login</button></a>
             </div>
-            <div className="landingPage-container1">
-                <p className="landingPage-text1">Selamat Datang di PEKA!</p>
-                <p className="landingPage-text2">Layanan Posyandu berbasis online yang bertujuan untuk memudahkan petugas maupun kader posyandu dalam menganalisis dan menginput data si Buah Hati</p>
-                <button className="landingPage-start">Mari Mulai</button>
+            <div className="container1">
+                <p className="text1">Selamat Datang di PEKA!</p>
+                <p className="text2">Layanan Posyandu berbasis online yang bertujuan untuk memudahkan petugas maupun kader posyandu dalam menganalisis dan menginput data si Buah Hati</p>
+                <button className="start">Mari Mulai</button>
             </div>
         </div>
-        <div className='landingPage-right'>
-        <img className='landingPage-image' src="img\logo.png"/>
+        <div className='right'>
+        <img src="img\logo.png"/>
         </div>
     </div>
   );

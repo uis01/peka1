@@ -1,118 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
-*{
-    margin: 0;
-
+* {
+  margin: 0;
 }
-.login-container{
-    font-family: 'poppins';
-    display: block;
-    overflow: auto;
-    width: 100%;
-    height: 100%;
+.containerLogin {
+  font-family: "poppins";
+  display: block;
+  overflow: auto;
+  width: 100vw;
+  height: 100vh;
 }
 
-.login-left{
-    margin: 10px;
-    padding: 25px 10px;
-    float: left;
-    width: 700px;
-    display: block;
-    overflow: auto;
-    
+.left {
+  float: left;
+  width: 50vw;
+  display: block;
+  overflow: auto;
 }
 
 /* .btn{
     float: right;
 } */
 
-.login-left button{
-    float: right;
-    border: none;
-    color: white;
-    background-color: #105C8C;
+.left button {
+  float: right;
+  border: none;
+  color: white;
+  background-color: #105c8c;
 }
 
-.login-left a button {
-    width: 120px;
-    padding: 10px 0;
-    font-size: 20px;
-    font-weight: bolder;
-    border-radius: 100px;
-    margin-left: 30px;
+.left a button {
+  width: 120px;
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: bolder;
+  border-radius: 100px;
+  margin-left: 30px;
 }
 
-.login-container1{
-    /* border: 1px solid; */
-    width: 500px;
-    margin: auto;
-    padding: auto;
+.container1 {
+  /* border: 1px solid; */
+  width: 500px;
+  padding: auto;
 }
 
-.login-container1 p{
-    text-align: center;
-    margin-left: 20px;
-    margin-bottom: 50px
+.container1 p {
+  text-align: center;
+  margin-left: 20px;
+  margin-bottom: 50px;
 }
 
-.login-container1 label{
-    font-weight: bolder;
-    font-size: 26px;
+.container1 label {
+  font-weight: bolder;
+  font-size: 26px;
 }
 
-.login-container1 input{
-    border: 0;
-    outline: 0;
-    border: none;
-    width: 500px;
-    height: 50px;
-    border-bottom: 1px solid;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    font-size: 20px;
+.container1 input {
+  border: none;
+  width: 500px;
+  height: 50px;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 20px;
 }
-.login-text1{
-    /* border: 1px solid; */
-    margin-top: 30px;
-    font-weight: bolder;
-    font-size: 30px;
+.text1 {
+  /* border: 1px solid; */
+  margin-top: 50px;
+  font-weight: bolder;
+  font-size: 30px;
 }
 
-.login-container1 .login-text2{
-    margin-top: -15px;
-    margin-left: 0;
-    font-weight: 500;
-    font-size: 15px;
-    text-align: left;
+.text2 {
+  /* border: 1px solid; */
+  margin-top: 80px;
+  width: 560px;
+  font-weight: 500;
+  font-size: 27px;
 }
 
-.login-left .login-container1 .login-start{
-    width: 300px;
-    font-size: 20px;
-    font-weight: bolder;
-    padding: 15px 45px;
-    border-radius: 10px;
-    /* display: block; */
-    margin-left: 50px;
-    margin-right: 90px;
-    margin-top: 30px;
+.left .container1 .start {
+  width: 300px;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 15px 45px;
+  border-radius: 10px;
+  /* display: block; */
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 100px;
 }
 
-.login-left .login-container1 .login-start:hover {
-    background-color: #5463F1;
+.right {
+  background-color: #105c8c;
+  float: right;
+  width: 600px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
-.login-right{
-    background-color: #105C8C;
-    float: right;
-    width: 500px;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-}
-
-.login-right img{
-    margin: auto;
-    display: block;
-    
+.right img {
+  display: block;
 }

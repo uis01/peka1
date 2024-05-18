@@ -1,90 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
-*{
-    margin: 0;
-
+* {
+  margin: 0;
 }
-.landingPage-container{
-    /* border: 1px solid; */
-    padding: -10px;
-    font-family: 'poppins';
-    display: block;
-    overflow: auto;
-    width: 100%;
-    height: 100%;
+.containerLanding {
+  font-family: "poppins";
+  display: block;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
 }
 
-.landingPage-left{
-    margin: 10px;
-    padding: 25px 10px;
-    float: left;
-    width: 700px;
-    display: block;
-    overflow: auto;
-    
+.left {
+  margin: 10px;
+  padding: 25px 10px;
+  float: left;
+  width: 700px;
+  display: block;
+  overflow: auto;
 }
 
 /* .btn{
     float: right;
 } */
 
-.landingPage-left button{
-    float: right;
-    border: none;
-    color: white;
-    background-color: #105C8C;
+.left button {
+  float: right;
+  border: none;
+  color: white;
+  background-color: #105c8c;
 }
 
-.landingPage-left a button {
-    width: 120px;
-    padding: 10px 0;
-    font-size: 20px;
-    font-weight: bolder;
-    border-radius: 100px;
-    margin-left: 30px;
-}
-.landingPage-container1 p{
-    margin-left: 20px;
-}
-.landingPage-text1{
-    /* border: 1px solid; */
-    margin-top: 50px;
-    font-weight: bolder;
-    font-size: 30px;
+.left button:hover {
+  background-color: #449ed6;
 }
 
-.landingPage-text2{
-    /* border: 1px solid; */
-    margin-top: 80px;
-    width: 560px;
-    font-weight: 500;
-    font-size: 27px;
+.left a button {
+  width: 120px;
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: bolder;
+  border-radius: 100px;
+  margin-left: 30px;
+}
+.container1 p {
+  margin-left: 20px;
+}
+.text1 {
+  /* border: 1px solid; */
+  margin-top: 50px;
+  font-weight: bolder;
+  font-size: 30px;
 }
 
-.landingPage-left .landingPage-container1 .landingPage-start{
-    font-size: 20px;
-    font-weight: bolder;
-    padding: 20px 45px;
-    border-radius: 10px;
-    /* display: block; */
-    margin-left: 250px;
-    margin-right: 250px;
-    margin-top: 100px;
+.text2 {
+  /* border: 1px solid; */
+  margin-top: 80px;
+  width: 560px;
+  font-weight: 500;
+  font-size: 27px;
 }
 
-.landingPage-right{
-    background-color: #D9D9D9;
-    float: right;
-    width: 600px;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
+.left .container1 .start {
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 20px 45px;
+  border-radius: 10px;
+  /* display: block; */
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 100px;
 }
 
-.landingPage-right .landingPage-image{
-    width: 300px;
-    height: 500px;
-    margin: auto;
-    display: block;
-    
+.right {
+  background-color: #d9d9d9;
+  float: right;
+  width: 600px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.right img {
+  margin: auto;
+  display: block;
 }
