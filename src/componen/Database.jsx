@@ -52,12 +52,12 @@ function Database () {
             {/* navigation End  */}
 
 
-            <div className="containerIsi">
+            <div className="containerIsi pl-32 mt-10">
 
                         {/* top container */}
-                        <div className="containerTop flex flex-row justify-between w-[80vw] ">
+                        <div className="containerTop flex flex-row justify-between w-[80vw]">
                             <h1 className= "text-3xl font-extrabold mr-auto my-auto">
-                            Tentang Kami
+                            Database
                             </h1>
                             <div className="containerInput mr-5 my-auto justify-center items-center flex">
                                 <input type="text" placeholder='cari....' className="border-b-4 rounded-sm border-solid border-black h-5 "/>
@@ -69,16 +69,38 @@ function Database () {
                                 <div className="containerProfil">
                                     <img src="/img/imgDashboard/Female Profile.png" alt="" className="w-[40px] h-[40px] " />
                                 </div>
-                            </div>          
+                            </div>
                         </div>
                         {/* Top container end*/}
+                        <div className='content-center mt-20'>
+                                <select name="filter" id="#" className='bg-blue-900 text-white px-3 py-1 rounded-full '>
+                                    <option value="">Filter by</option>
+                                    <option value="">A-Z</option>
+                                    <option value="">Z-A</option>
+                                </select>
+
+                                <table className='w-4/5 text-center table-auto border-collapse border border-slate-400 mt-2 px-4 py-4'>
+                                    <tr>
+                                    <th className='border border-slate-300'>No</th>
+                                    <th className='border border-slate-300'>Nama Pengguna</th>
+                                    <th className='border border-slate-300'>nomor kartu keluarga</th>
+                                    <th className='border border-slate-300'>identitas anak</th>
+                                    </tr> 
+                                    <tr>
+                                        <td className='border border-slate-300'>1</td>
+                                        <td className='border border-slate-300'>Adam</td>
+                                        <td className='border border-slate-300'>1234567890</td>
+                                        <td className='border border-slate-300'><button className='bg-blue-900 text-white px-3 py-1 rounded-full'>click here</button></td>
+                                    </tr>  
+                                </table>    
+                            </div>       
 
             </div>
 
 
         {/* footer */}
         <div className=" h-[6.3vh] w-full bg-[#0b598a] bottom-0 left-0 absolute flex justify-center items-center">
-            <p>2024 copyright PEKA.com</p>
+            <p className='text-slate-50'>2024 copyright PEKA.com</p>
         </div>
         {/* footerend*/}
 
