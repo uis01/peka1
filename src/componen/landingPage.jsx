@@ -2,8 +2,7 @@
 import './css/landingPage.css';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-
-import Register from './register';
+// import Register from './register';
 
 
 // import logoImage from './img/logo.png'; 
