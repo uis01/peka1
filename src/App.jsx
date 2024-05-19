@@ -10,6 +10,7 @@ import Dashboard from './componen/dashboard';
 import TentangKami from './componen/tentangKami';
 import Database from './componen/Database';
 import Editor from './componen/Editor';
+import IdentitasAnak from './componen/identitasAnak';
 
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
         <Route path="Editor" element={<Editor />}>
         </Route>
         <Route path="Database" element={<Database />}>
+        </Route>
+        <Route path="IdentitasAnak" element={<IdentitasAnak />}>
         </Route>
       </Routes>
     </Router>

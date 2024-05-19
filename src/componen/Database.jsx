@@ -60,7 +60,7 @@ function Database () {
                             Database
                             </h1>
                             <div className="containerInput mr-5 my-auto justify-center items-center flex">
-                                <input type="text" placeholder='cari....' className="bg-slate-200 rounded-sm outline-0 h-5 px-5 py-5 rounded-lg"/>
+                                <input type="text" placeholder='cari....' className="bg-slate-200 rounded-sm outline-0 h-5 px-5 py-5 rounded-t-xl rounded-b-xl"/>
                             </div>
                             <div className="containerLogo flex flex-row w-32 mr-3 justify-center items-center">
                                 <div className="containerBell  rounded-md bg-[rgba(16,92,140,1)] px-1 flex mx-[15px] p-1">
