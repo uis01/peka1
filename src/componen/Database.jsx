@@ -3,10 +3,10 @@ import './css/input.css'
 function Database () {
     return (
         <>
-        <div className="containerRoot flex flex-row h-full">
+        <div className="containerRoot flex flex-row h-full ">
 
             {/* navigation Start  */}
-            <div className='containerNav w-1/6 h-[100vh] justify-items-center flex flex-col static'>
+            <div className='containerNav w-1/6 h-[100vh] justify-items-center flex flex-col mr-52 fixed'>
                     <div className='img flex justify-center items-center mt-5'>
                         <img src="/img/logoNavbar.png" alt="" className='w-[130px] h-[115px]'/>
                     </div>
@@ -52,15 +52,15 @@ function Database () {
             {/* navigation End  */}
 
 
-            <div className="containerIsi pl-32 mt-10">
+            <div className="containerIsi pl-32 mt-10 mb-20 ml-52 mr-0">
 
                         {/* top container */}
-                        <div className="containerTop flex flex-row justify-between w-[80vw]">
+                        <div className="containerTop flex flex-row justify-between w-[70vw]">
                             <h1 className= "text-3xl font-extrabold mr-auto my-auto">
                             Database
                             </h1>
                             <div className="containerInput mr-5 my-auto justify-center items-center flex">
-                                <input type="text" placeholder='cari....' className="border-b-4 rounded-sm border-solid border-black h-5 "/>
+                                <input type="text" placeholder='cari....' className="bg-slate-200 rounded-sm outline-0 h-5 px-5 py-5 rounded-lg"/>
                             </div>
                             <div className="containerLogo flex flex-row w-32 mr-3 justify-center items-center">
                                 <div className="containerBell  rounded-md bg-[rgba(16,92,140,1)] px-1 flex mx-[15px] p-1">
@@ -72,39 +72,73 @@ function Database () {
                             </div>
                         </div>
                         {/* Top container end*/}
-                        <div className='content-center mt-20'>
-                                <select name="filter" id="#" className='bg-blue-900 text-white px-3 py-1 rounded-full '>
+                        <div className='content-center mt-20 mr-5'>
+                                <select name="filter" id="#" className='bg-blue-900 text-white px-3 py-1 rounded-full float-right mb-5'>
                                     <option value="">Filter by</option>
                                     <option value="">A-Z</option>
                                     <option value="">Z-A</option>
                                 </select>
 
-                                <table className='w-4/5 text-center table-auto border-collapse border border-slate-400 mt-2 px-4 py-4'>
+                                <table className='w-full text-center table-auto border-collapse border border-slate-400 mt-2 px-4 py-4'>
                                     <tr>
-                                    <th className='border border-slate-300'>No</th>
-                                    <th className='border border-slate-300'>Nama Pengguna</th>
-                                    <th className='border border-slate-300'>nomor kartu keluarga</th>
-                                    <th className='border border-slate-300'>identitas anak</th>
+                                    <th className='border border-slate-300 px-1 py-4'>No</th>
+                                    <th className='border border-slate-300 px-1 py-4'>Nama Pengguna</th>
+                                    <th className='border border-slate-300 px-1 py-4'>Nomor Kartu Keluarga</th>
+                                    <th className='border border-slate-300 px-1 py-4'>Identitas Anak</th>
                                     </tr> 
                                     <tr>
-                                        <td className='border border-slate-300'>1</td>
-                                        <td className='border border-slate-300'>Adam</td>
-                                        <td className='border border-slate-300'>1234567890</td>
-                                        <td className='border border-slate-300'><button className='bg-blue-900 text-white px-3 py-1 rounded-full'>click here</button></td>
+                                        <td className='border border-slate-300 px-1 py-4'>1</td>
+                                        <td className='border border-slate-300 px-1 py-4'>Adam</td>
+                                        <td className='border border-slate-300 px-1 py-4'>1234567890</td>
+                                        <td className='border border-slate-300 px-1 py-4'><button className='bg-blue-900 text-white px-3 py-1 rounded-full'>click here</button></td>
                                     </tr>  
+                                    <tr>
+                                        <td className='border border-slate-300 px-1 py-4'>2</td>
+                                        <td className='border border-slate-300 px-1 py-4'>Adam</td>
+                                        <td className='border border-slate-300 px-1 py-4'>1234567890</td>
+                                        <td className='border border-slate-300 px-1 py-4'><button className='bg-blue-900 text-white px-3 py-1 rounded-full'>click here</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td className='border border-slate-300 px-1 py-4'>3</td>
+                                        <td className='border border-slate-300 px-1 py-4'>Adam</td>
+                                        <td className='border border-slate-300 px-1 py-4'>1234567890</td>
+                                        <td className='border border-slate-300 px-1 py-4'><button className='bg-blue-900 text-white px-3 py-1 rounded-full'>click here</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td className='border border-slate-300 px-1 py-4'>4</td>
+                                        <td className='border border-slate-300 px-1 py-4'>Adam</td>
+                                        <td className='border border-slate-300 px-1 py-4'>1234567890</td>
+                                        <td className='border border-slate-300 px-1 py-4'><button className='bg-blue-900 text-white px-3 py-1 rounded-full'>click here</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td className='border border-slate-300 px-1 py-4'>5</td>
+                                        <td className='border border-slate-300 px-1 py-4'>Adam</td>
+                                        <td className='border border-slate-300 px-1 py-4'>1234567890</td>
+                                        <td className='border border-slate-300 px-1 py-4'><button className='bg-blue-900 text-white px-3 py-1 rounded-full'>click here</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td className='border border-slate-300 px-1 py-4'>6</td>
+                                        <td className='border border-slate-300 px-1 py-4'>Adam</td>
+                                        <td className='border border-slate-300 px-1 py-4'>1234567890</td>
+                                        <td className='border border-slate-300 px-1 py-4'><button className='bg-blue-900 text-white px-3 py-1 rounded-full'>click here</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td className='border border-slate-300 px-1 py-4'>7</td>
+                                        <td className='border border-slate-300 px-1 py-4'>Adam</td>
+                                        <td className='border border-slate-300 px-1 py-4'>1234567890</td>
+                                        <td className='border border-slate-300 px-1 py-4'><button className='bg-blue-900 text-white px-3 py-1 rounded-full'>click here</button></td>
+                                    </tr>
                                 </table>    
                             </div>       
 
             </div>
-
-
+        </div>
         {/* footer */}
-        <div className=" h-[6.3vh] w-full bg-[#0b598a] bottom-0 left-0 absolute flex justify-center items-center">
+        <div className=" h-[6.3vh] w-full bg-[#0b598a] bottom-0 left-0 fixed flex justify-center items-center">
             <p className='text-slate-50'>2024 copyright PEKA.com</p>
         </div>
         {/* footerend*/}
 
-        </div>
         </>
 
     )
