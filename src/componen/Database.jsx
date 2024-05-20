@@ -3,7 +3,7 @@ import './css/input.css'
 function Database () {
     return (
         <>
-        <div className="containerRoot flex flex-row h-full">
+        <div className="containerRoot flex flex-row h-full w-full">
 
             {/* navigation Start  */}
             <div className='containerNav w-1/6 h-[100vh] justify-items-center flex flex-col static'>
@@ -14,37 +14,37 @@ function Database () {
                         <li className=' py-[0.5vh] mt-[5vh] ml-8 border-r-2 border-solid border-[rgba(16,92,140,1)] '>
                             <button className='w-[18.3] h-full flex flex-row items-start justify-center  '>
                                 <img src="/img/imgNavbar/dashboard 1.png" className='w-full h-[24px] mr-2' alt="" />
-                                <p className='text-black '>dashboard</p>
+                                <h1 className='text-black'>dashboard</h1>
                             </button>
                         </li>
                         <li className=' py-[0.5vh] mt-[5vh] ml-8  '>
                             <button className='w-[18.3] h-full flex flex-row items-start justify-center'>
                                 <img src="/img/imgNavbar/writer 1.png" className='w-full h-[24px] mr-2' alt="" />
-                                <p className='text-black '>editor</p>
+                                <h2 className='text-black '>editor</h2>
                             </button>
                         </li>
                         <li className=' py-[0.5vh] mt-[5vh] ml-8 '>
                             <button className='w-[18.3] h-full flex flex-row items-start justify-center'>
                                 <img src="/img/imgNavbar/jadwal.png" className='w-full h-[24px] mr-2' alt="" />
-                                <p className=' text-black'>jadwal</p>
+                                <h2 className=' text-black'>jadwal</h2>
                             </button>
                         </li>
                         <li className=' py-[0.5vh] mt-[5vh] ml-8 '>
                             <button className='w-[18.3] h-full flex flex-row items-start justify-center'>
                                 <img src="/img/imgNavbar/database 1.png" className='w-full h-[24px] mr-2' alt="" />
-                                <p className=' text-black'>database</p>
+                                <h2 className=' text-black'>database</h2>
                             </button>
                         </li>
                         <li className=' py-[0.5vh] mt-[5vh] ml-8 '>
                             <button className='w-[18.3] h-full flex flex-row items-start justify-center'>
                                 <img src="/img/imgNavbar/tentang kami.png" className='w-[24px] h-[24px] mr-2' alt="" />
-                                <p className=' text-black'>tentang kami</p>
+                                <h2 className=' text-black'>tentang kami</h2>
                             </button>
                         </li>
                         <li className=' py-[0.5vh] mt-[5vh] ml-8 '>
                             <button className='w-[18.3] h-full flex flex-row items-start justify-center'>
                                 <img src="/img/imgNavbar/bantuan.png" className='w-full h-[24px] mr-2' alt="" />
-                                <p className=' text-black'>bantuan</p>
+                                <h2 className=' text-black'>bantuan</h2>
                             </button>
                         </li>        
                     </div>    
@@ -52,7 +52,7 @@ function Database () {
             {/* navigation End  */}
 
 
-            <div className="containerIsi pl-32 mt-10">
+            <div className="containerIsi pl-3 mt-10 w-full">
 
                         {/* top container */}
                         <div className="containerTop flex flex-row justify-between w-[80vw]">
@@ -72,6 +72,8 @@ function Database () {
                             </div>
                         </div>
                         {/* Top container end*/}
+
+                        {/* content  Start*/}
                         <div className='content-center mt-20'>
                                 <select name="filter" id="#" className='bg-blue-900 text-white px-3 py-1 rounded-full '>
                                     <option value="">Filter by</option>
@@ -93,7 +95,8 @@ function Database () {
                                         <td className='border border-slate-300'><button className='bg-blue-900 text-white px-3 py-1 rounded-full'>click here</button></td>
                                     </tr>  
                                 </table>    
-                            </div>       
+                        </div>
+                        {/* content End */}
 
             </div>
 
