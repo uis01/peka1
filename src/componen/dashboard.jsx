@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Dashboard (){
     return (
         <>
-            <div className='containerRoot flex flex-row h-full'>
+            <div className="containerRoot flex flex-row h-full">
                 
                 {/* navigation Start  */}
                 <div className='containerNav w-1/6 h-[100vh] justify-items-center flex flex-col static'>
@@ -66,10 +66,10 @@ function Dashboard (){
 
 
                 
-                <div className="containerIsi">
+                <div className="containerIsi mt-10 mb-20 mr-0 ">
 
                     {/* top container */}
-                    <div className="containerTop flex flex-row justify-between w-[70vw] mb-3 mt-5">
+                    <div className="containerTop flex flex-row justify-between w-[70vw] mb-3 mt-5 ml-20">
                             <h1 className= "text-3xl font-bold mr-auto my-auto">
                             Dashboard
                             </h1>
@@ -88,21 +88,21 @@ function Dashboard (){
                     {/* Top container end*/}
 
                     {/* mid dashboard*/}
-                    <div className="containerMidDashboard mt-[4rem]">
-                        <div className="container1 w-[70vw] h-[15vh] m-auto mt-5 border-solid border-2 border-[rgba(16,92,140,1)] rounded-xl flex flex-col justify-center items-start text-4xl font-bold">
-                            <h1 className='text-4xl font-bold'> Halo Bunda Sari</h1>
-                            <h2 className='text-xl font-semibold'>Sudah siap untuk jalani hari ini?</h2>
-                            <img src="/img/imgDashboard/gambar1.png" alt="" className='top-7 right-28 absolute h-[30vh]' />   
+                    <div className="containerMidDashboard mt-28 ">
+                        <div className="container1 max-w-4xl h-36 m-auto mt-5 border-solid border-2 border-[rgba(16,92,140,1)] rounded-xl flex flex-col justify-center items-start text-4xl font-bold">
+                            <h1 className='text-4xl font-bold ml-5'> Halo Bunda Sari</h1>
+                            <h2 className='text-xl font-semibold ml-5'>Sudah siap untuk jalani hari ini?</h2>
+                            <img src="/img/imgDashboard/gambar1.png" alt="" className='top-36 right-44 absolute h-[30vh]' />   
                         </div>
 
-                        <div className="container2 w-[80vw] h-[17vh] mt-5 border-y-2 border-solid border-[rgba(16,92,140,1)] flex flex-col justify-center ">
+                        <div className="container1 p-2 max-w-4xl  m-auto mt-5 border-solid border-2 border-[rgba(16,92,140,1)] rounded-xl flex flex-col justify-center items-start">
                             <h1 className='font-bold text-2xl'>Perkembangan anak</h1>
                             <br />
                             <h2 className='font-medium text-lg'>tambahkan data mengenai deskripsi <br /> tentang perkembangan si buah hati </h2>
-                            <button className='bg-[rgba(16,92,140,1)] w-[15vw] h-[7vh] absolute right-[40%] border-solid border-2 rounded-3xl'>
-                                Tambahkan data
+                            <button className='bg-[rgba(16,92,140,1)] p-2 absolute ml-96 border-solid border-[rgba(16,92,140,1)] border-2 rounded-3xl text-white'>
+                                + Tambahkan data 
                             </button>
-                            <img src="/img/imgDashboard/gambar2.png" alt="" className='h-[16vh] w-[18vw] right-24 top-47 absolute ' />
+                            <img src="/img/imgDashboard/gambar2.png" alt="" className='max-h-max max-w-56 right-44 top-47 absolute ' />
                         </div>
                     </div>
                     
@@ -110,35 +110,33 @@ function Dashboard (){
 
 
 <br />
-                    <h1>
-                        quick edit
-                    </h1>
-
                         {/* continerDown */}
                     <div className="ContainerDown text-white">
-                        <div className="containerDown1 w-[70vw] h-[15vh] bg-[rgba(16,92,140,1)] m-auto mt-3 flex items-center">
-                            <img src="/img/imgDashboard/gambar3.png" alt="" className='w-[8vw] ml-4'/>
-                            <div className="text ml-2 w-[58vw] h-full mt-5">
-                                <h1 className=''>lorem</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ea at repellendus, facere ut quod eaque amet ducimus neque, inventore, voluptates error dolores voluptatibus dolore? Voluptas sed facilis quaerat asperiores.</p>
+                        <div className="containerDown1 rounded-xl max-w-4xl bg-[rgba(16,92,140,1)] m-auto flex items-center p-2 mb-5">
+                            <img src="/img/imgDashboard/gambar3.png" alt="" className='w-36 mr-2'/>
+                            <div className="text">
+                                <h1 className='text-xl font-semibold'>lorem</h1>
+                                <p className='text-xs '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ea at repellendus, facere ut quod eaque amet ducimus neque, inventore, voluptates error dolores voluptatibus dolore? Voluptas sed facilis quaerat asperiores.</p>
                             </div>
                         </div>
-
-                        <div className="containerDown2 w-[70vw] h-[15vh] bg-[rgba(16,92,140,1)] m-auto mt-3 flex items-center">
-                            <img src="/img/imgDashboard/gambar3.png" alt="" className='w-[8vw] ml-4'/>
-                            <div className="text ml-2 w-[58vw] h-full mt-5 ">
-                                <h1 className=''>lorem</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ea at repellendus, facere ut quod eaque amet ducimus neque, inventore, voluptates error dolores voluptatibus dolore? Voluptas sed facilis quaerat asperiores.</p>
+                        
+                        <div className="containerDown1 rounded-xl max-w-4xl bg-[rgba(16,92,140,1)] m-auto flex items-center p-2 mb-5">
+                            <img src="/img/imgDashboard/gambar3.png" alt="" className='w-36 mr-2'/>
+                            <div className="text">
+                                <h1 className='text-xl font-semibold'>lorem</h1>
+                                <p className='text-xs '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ea at repellendus, facere ut quod eaque amet ducimus neque, inventore, voluptates error dolores voluptatibus dolore? Voluptas sed facilis quaerat asperiores.</p>
                             </div>
                         </div>
+                        
+                
                     </div>
                     {/* downcontainer end*/}
                 </div>
             </div>
 
             {/* footer */}
-            <div className=" h-[6.3vh] w-full bg-[#0b598a] bottom-0 left-0 absolute flex justify-center items-center">
-                <p>2024 copyright PEKA.com</p>
+            <div className=" h-[6.3vh] w-full bg-[#0b598a] bottom-0 left-0 fixed flex justify-center items-center">
+                <p className='text-slate-50'>2024 copyright PEKA.com</p>
             </div>
             {/* footerend*/}
 
