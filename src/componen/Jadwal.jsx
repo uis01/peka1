@@ -1,4 +1,5 @@
 import './css/input.css'
+import { Link } from 'react-router-dom';
 
 function Jadwal () {
     return (
@@ -6,46 +7,58 @@ function Jadwal () {
         <div className="containerRoot flex flex-row h-full">
 
             {/* navigation Start  */}
-            <div className='containerNav w-1/6 h-[100vh] justify-items-center flex flex-col static font-semibold'>
+            <div className='containerNav w-1/6 h-[100vh] justify-items-center flex flex-col static'>
                     <div className='img flex justify-center items-center mt-5'>
                         <img src="/img/logoNavbar.png" alt="" className='w-[130px] h-[115px]'/>
                     </div>
                     <div className="listNav text-white decoration list-none mt-[4vh]">
-                        <li className=' py-[0.5vh] mt-[5vh] ml-8 '>
-                            <button className='w-[18.3] h-full flex flex-row items-start justify-center  '>
-                                <img src="/img/imgNavbar/dashboard 1.png" className='w-full h-[24px] mr-2' alt="" />
-                                <p className='text-black '>dashboard</p>
-                            </button>
-                        </li>
                         <li className=' py-[0.5vh] mt-[5vh] ml-8  '>
-                            <button className='w-[18.3] h-full flex flex-row items-start justify-center'>
-                                <img src="/img/imgNavbar/writer 1.png" className='w-full h-[24px] mr-2' alt="" />
-                                <p className='text-black '>editor</p>
-                            </button>
+                            <Link to="/Dashboard">
+                                <button className='w-[18.3] h-full flex flex-row items-start justify-center  '>
+                                    <img src="/img/imgNavbar/dashboard 1.png" className='w-full h-[24px] mr-2' alt="" />
+                                    <p className='text-black '>dashboard</p>
+                                </button>
+                            </Link>  
+                        </li>
+                        <li className=' py-[0.5vh] mt-[5vh] ml-8  '> 
+                            <Link to="/Editor">
+                                <button className='w-[18.3] h-full flex flex-row items-start justify-center'>
+                                    <img src="/img/imgNavbar/writer 1.png" className='w-full h-[24px] mr-2' alt="" />
+                                    <p className='text-black '>editor</p>
+                                </button>
+                            </Link>                          
                         </li>
                         <li className=' py-[0.5vh] mt-[5vh] ml-8 border-r-2 border-solid border-[rgba(16,92,140,1)]'>
+                        <Link to="/Jadwal">
                             <button className='w-[18.3] h-full flex flex-row items-start justify-center'>
                                 <img src="/img/imgNavbar/jadwal.png" className='w-full h-[24px] mr-2' alt="" />
                                 <p className=' text-black'>jadwal</p>
                             </button>
+                        </Link> 
                         </li>
                         <li className=' py-[0.5vh] mt-[5vh] ml-8 '>
+                        <Link to="/Database">
                             <button className='w-[18.3] h-full flex flex-row items-start justify-center'>
                                 <img src="/img/imgNavbar/database 1.png" className='w-full h-[24px] mr-2' alt="" />
                                 <p className=' text-black'>database</p>
                             </button>
+                        </Link>                          
                         </li>
                         <li className=' py-[0.5vh] mt-[5vh] ml-8 '>
+                        <Link to="/TentangKami">
                             <button className='w-[18.3] h-full flex flex-row items-start justify-center'>
                                 <img src="/img/imgNavbar/tentang kami.png" className='w-[24px] h-[24px] mr-2' alt="" />
                                 <p className=' text-black'>tentang kami</p>
                             </button>
+                        </Link>                           
                         </li>
                         <li className=' py-[0.5vh] mt-[5vh] ml-8 '>
-                            <button className='w-[18.3] h-full flex flex-row items-start justify-center'>
-                                <img src="/img/imgNavbar/bantuan.png" className='w-full h-[24px] mr-2' alt="" />
-                                <p className=' text-black'>bantuan</p>
-                            </button>
+                            <Link to="/Bantuan">
+                                <button className='w-[18.3] h-full flex flex-row items-start justify-center'>
+                                    <img src="/img/imgNavbar/bantuan.png" className='w-full h-[24px] mr-2' alt="" />
+                                    <p className=' text-black'>bantuan</p>
+                                </button>
+                            </Link>                          
                         </li>        
                     </div>    
             </div>
@@ -55,7 +68,7 @@ function Jadwal () {
             <div className="containerIsi">
 
                         {/* top container */}
-                        <div className="containerTop flex flex-row justify-between w-[80vw] mb-3 mt-5">
+                        <div className="containerTop flex flex-row justify-between w-[70vw] mb-3 mt-5">
                             <h1 className= "text-3xl font-bold mr-auto my-auto">
                             Jadwal
                             </h1>
