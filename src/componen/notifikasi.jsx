@@ -118,8 +118,7 @@ function Notifikasi() {
                             </table>
                             <div className='float-right'><img src="/img/Pencil.png" /></div>
                         </div>
-                        {/* <div className='m-auto bg-black size-14 flex items-center rounded-full'><div className='font-bold text-3xl w-full text-white text-center'>+</div></div> */}
-                        
+<div className='bg-black text-white text-5xl m-auto text-center align-bottom size-12 rounded-full'>+</div>                        
                     </div>
 
                     
