@@ -55,7 +55,7 @@ function Editor () {
             <div className="containerIsi">
 
                         {/* top container */}
-                        <div className="containerTop flex flex-row justify-between w-[80vw] ">
+                        <div className="containerTop flex flex-row justify-between w-[80vw] mb-3 mt-5 ">
                             <h1 className= "text-3xl font-extrabold mr-auto my-auto">
                             Tentang Kami
                             </h1>

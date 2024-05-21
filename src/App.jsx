@@ -11,6 +11,7 @@ import TentangKami from './componen/tentangKami';
 import Database from './componen/Database';
 import Editor from './componen/Editor';
 import IdentitasAnak from './componen/identitasAnak';
+import Jadwal from './componen/Jadwal';
 
 function App() {
   return (
@@ -31,6 +32,8 @@ function App() {
         <Route path="Database" element={<Database />}>
         </Route>
         <Route path="IdentitasAnak" element={<IdentitasAnak />}>
+        </Route>
+        <Route path="Jadwal" element={<Jadwal />}>
         </Route>
       </Routes>
     </Router>

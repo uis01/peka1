@@ -55,9 +55,9 @@ function IdentitasAnak() {
                 <div className="containerIsi pl-32 mt-10 mb-20 ml-52 mr-0 bg-slate-200 ">
 
                     {/* top container */}
-                    <div className="containerTop flex flex-row justify-between w-[70vw]">
+                    <div className="containerTop flex flex-row justify-between w-[70vw] mb-3 mt-5">
                         <h1 className="text-3xl font-extrabold mr-auto my-auto">
-                            Database
+                            Identitas Anak
                         </h1>
                         <div className="containerInput mr-5 my-auto justify-center items-center flex">
                             <input type="text" placeholder='cari....' className="bg-white rounded-sm outline-0 h-5 px-5 py-5 rounded-t-xl rounded-b-xl" />
@@ -72,6 +72,8 @@ function IdentitasAnak() {
                         </div>
                     </div>
                     {/* Top container end*/}
+
+                    {/* content */}
                     <div className='content-center mt-20 w-full '>
                         <div class=" rounded overflow-hidden shadow-lg max-w-xl	m-auto bg-white py-5 rounded-b-3xl rounded-t-3xl">
                             <div class="font-bold text-4xl my-5 text-center text-blue-600">Identitas Anak</div>
@@ -113,8 +115,11 @@ function IdentitasAnak() {
                         </div>
                     </div>
                     <button className='bg-blue-900 text-white px-3 py-3 mt-5 rounded-t-xl rounded-b-xl float-right'>Riwayat Pengecekan</button>
+                    {/* content end */}
                 </div>
             </div>
+
+
             {/* footer */}
             <div className=" h-[6.3vh] w-full bg-[#0b598a] bottom-0 left-0 fixed flex justify-center items-center">
                 <p className='text-slate-50'>2024 copyright PEKA.com</p>

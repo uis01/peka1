@@ -11,7 +11,7 @@ function TentangKami () {
                             <img src="/img/logoNavbar.png" alt="" className='w-[130px] h-[115px]'/>
                         </div>
                         <div className="listNav text-white decoration list-none mt-[4vh]">
-                            <li className=' py-[0.5vh] mt-[5vh] ml-8 border-r-2 border-solid border-[rgba(16,92,140,1)] '>
+                            <li className=' py-[0.5vh] mt-[5vh] ml-8  '>
                                 <button className='w-[18.3] h-full flex flex-row items-start justify-center  '>
                                     <img src="/img/imgNavbar/dashboard 1.png" className='w-full h-[24px] mr-2' alt="" />
                                     <p className='text-black '>dashboard</p>
@@ -35,7 +35,7 @@ function TentangKami () {
                                     <p className=' text-black'>database</p>
                                 </button>
                             </li>
-                            <li className=' py-[0.5vh] mt-[5vh] ml-8 '>
+                            <li className=' py-[0.5vh] mt-[5vh] ml-8 border-r-2 border-solid border-[rgba(16,92,140,1)]'>
                                 <button className='w-[18.3] h-full flex flex-row items-start justify-center'>
                                     <img src="/img/imgNavbar/tentang kami.png" className='w-[24px] h-[24px] mr-2' alt="" />
                                     <p className=' text-black'>tentang kami</p>
@@ -55,7 +55,7 @@ function TentangKami () {
                 <div className="containerIsi">
 
                             {/* top container */}
-                            <div className="containerTop flex flex-row justify-between w-[80vw] ">
+                            <div className="containerTop flex flex-row justify-between w-[80vw] mb-3 mt-5">
                                 <h1 className= "text-3xl font-extrabold mr-auto my-auto">
                                 Tentang Kami
                                 </h1>
@@ -72,6 +72,42 @@ function TentangKami () {
                                 </div>          
                             </div>
                             {/* Top container end*/}
+
+                            {/* content  */}
+                            <div className="containerContent  absolute top-32 ml-5">
+                                <p className='w-2/3  text-lg'>
+                                Kami adalah tim Sukasrana yang peduli di balik layanan Posyandu Manggis. Dengan komitmen kami terhadap kesehatan dan kesejahteraan masyarakat, kami berupaya memberikan layanan yang berkualitas dan terjangkau bagi keluarga di sekitar kami.
+                                </p>
+                                <br />
+                                <div className='w-full flex flex-row'>
+                                    <p className='w-1/2  font-semibold'>
+                                    "Anak-anak adalah investasi terbaik untuk masa depan kita. Berikan mereka makanan dan layanan kesehatan yang baik, dan Anda memberi mereka modal untuk sukses sepanjang hidup mereka."
+                                    </p>
+                                    <br />
+                                    <img src="/img/image 1.png" alt="" className=' w-[160px]  h-[120] ml-10' />
+                                </div>
+                                
+                                <br />
+                                <h1>Tim Kami</h1>
+                                <div className="img grid grid-cols-3 gap-0 w-1/2 ml-28">
+                                    <div className='grid grid-cols-2 p-0'>
+                                        <img src="/img/Name.png" alt="" className=' w-16 p-0' />
+                                        <img src="/img/Name.png" alt="" className=' w-16 p-0' />
+                                        <img src="/img/Name.png" alt="" className=' w-16 p-0' />
+                                        <img src="/img/Name.png" alt="" className=' w-16 p-0' />
+                                    </div>
+                                    <div className='flex items-center justify-center'>
+                                    <img src="/img/Name.png" alt="" className=' w-16 m-0 items-center' />
+                                    </div>
+                                    <div className='grid grid-cols-2 gap-0'>
+                                        <img src="/img/Name.png" alt="" className=' w-16 m-0' />
+                                        <img src="/img/Name.png" alt="" className=' w-16 m-0' />
+                                        <img src="/img/Name.png" alt="" className=' w-16 m-0' />
+                                        <img src="/img/Name.png" alt="" className=' w-16 m-0' />
+                                    </div>
+                                </div>
+                                
+                            </div>
 
                 </div>
 
