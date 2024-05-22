@@ -5,7 +5,6 @@ function Bantuan() {
     return (
         <>
             <div className="containerRoot flex flex-row h-full bg-slate-200">
-
                 {/* navigation Start  */}
                 <div className='containerNav w-1/6 h-[100vh] justify-items-center flex flex-col static'>
                         <div className='img flex justify-center items-center mt-5'>
