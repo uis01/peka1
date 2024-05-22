@@ -65,7 +65,7 @@ function IdentitasAnak() {
                 {/* navigation End  */}
 
 
-                <div className="containerIsi pl-32 mt-10 mb-20 ml-52 mr-0 bg-slate-200 ">
+                <div className="containerIsi pl-32 ml-3 bg-slate-200 ">
 
                     {/* top container */}
                     <div className="containerTop flex flex-row justify-between w-[70vw] mb-3 mt-5">

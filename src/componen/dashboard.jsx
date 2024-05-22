@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Dashboard (){
     return (
         <>
-            <div className='containerRoot flex flex-row h-full'>
+            <div className='containerRoot flex flex-row h-full bg-slate-200 mb-2'>
                 
                 {/* navigation Start  */}
                 <div className='containerNav w-1/6 h-[100vh] justify-items-center flex flex-col static'>
@@ -66,7 +66,7 @@ function Dashboard (){
 
 
                 
-                <div className="containerIsi">
+                <div className="containerIsi ml-3">
 
                     {/* top container */}
                     <div className="containerTop flex flex-row justify-between w-[70vw] mb-3 mt-5">
@@ -92,7 +92,7 @@ function Dashboard (){
                         <div className="container1 w-[70vw] h-[15vh] m-auto mt-5 border-solid border-2 border-[rgba(16,92,140,1)] rounded-xl flex flex-col justify-center items-start text-4xl font-bold">
                             <h1 className='text-4xl font-bold'> Halo Bunda Sari</h1>
                             <h2 className='text-xl font-semibold'>Sudah siap untuk jalani hari ini?</h2>
-                            <img src="/img/imgDashboard/gambar1.png" alt="" className='top-7 right-28 absolute h-[30vh]' />   
+                            <img src="/img/imgDashboard/gambar1.png" alt="" className='top-10 right-28 absolute h-[27vh]' />   
                         </div>
 
                         <div className="container2 w-[80vw] h-[17vh] mt-5 border-y-2 border-solid border-[rgba(16,92,140,1)] flex flex-col justify-center ">
@@ -102,7 +102,10 @@ function Dashboard (){
                             <button className='bg-[rgba(16,92,140,1)] w-[15vw] h-[7vh] absolute right-[40%] border-solid border-2 rounded-3xl'>
                                 Tambahkan data
                             </button>
-                            <img src="/img/imgDashboard/gambar2.png" alt="" className='h-[16vh] w-[18vw] right-24 top-47 absolute ' />
+                            <div>
+                                <img src="/img/imgDashboard/gambar2.png" alt="" className='h-[16vh] w-[18vw] right-24 top-[16rem] absolute ' />
+                            </div>
+                            
                         </div>
                     </div>
                     
@@ -137,7 +140,7 @@ function Dashboard (){
             </div>
 
             {/* footer */}
-            <div className=" h-[6.3vh] w-full bg-[#0b598a] bottom-0 left-0 absolute flex justify-center items-center">
+            <div className=" h-[6.3vh] w-full bg-[#0b598a] fixed bottom-0 left-0  flex justify-center items-center">
                 <p>2024 copyright PEKA.com</p>
             </div>
             {/* footerend*/}

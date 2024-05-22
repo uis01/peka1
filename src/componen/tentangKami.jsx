@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function TentangKami () {
     return (
         <>
-            <div className="containerRoot flex flex-row h-full">
+            <div className="containerRoot flex flex-row h-full bg-slate-200">
 
                 {/* navigation Start  */}
                 <div className='containerNav w-1/6 h-[100vh] justify-items-center flex flex-col static'>
@@ -65,7 +65,7 @@ function TentangKami () {
                 {/* navigation End  */}
 
 
-                <div className="containerIsi">
+                <div className="containerIsi ml-3">
 
                             {/* top container */}
                             <div className="containerTop flex flex-row justify-between w-[70vw] mb-3 mt-5">
