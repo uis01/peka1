@@ -66,10 +66,10 @@ function Dashboard (){
 
 
                 
-                <div className="containerIsi ml-3">
+                <div className="containerIsi ml-3 mb-10">
 
                     {/* top container */}
-                    <div className="containerTop flex flex-row justify-between w-[70vw] mb-3 mt-5 ml-20">
+                    <div className="containerTop flex flex-row justify-between w-[70vw] mb-3 mt-5">
                             <h1 className= "text-3xl font-bold mr-auto my-auto">
                             Dashboard
                             </h1>
@@ -103,7 +103,7 @@ function Dashboard (){
                                 + Tambahkan data 
                             </button>
                             <div>
-                                <img src="/img/imgDashboard/gambar2.png" alt="" className='h-[16vh] w-[18vw] right-24 top-[16rem] absolute ' />
+                                <img src="/img/imgDashboard/gambar2.png" alt="" className='h-[16vh] w-[15vw] right-48 top-[16rem] absolute ' />
                             </div>
                             
                         </div>
