@@ -1,105 +1,132 @@
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './css/input.css'
-
+// import { Link } from 'react-router-dom';
+import { FiMenu } from "react-icons/fi";
+import { FiX } from "react-icons/fi";
+import { FaSearch } from "react-icons/fa";
 function PerkembanganAnak() {
+    const [open, setOpen] = useState(false);
+    const [open2, setsrc] = useState(false);
+
     return (
         <>
             <div className="containerRoot flex flex-row h-full bg-slate-200">
-
                 {/* navigation Start  */}
-                <div className='containerNav w-1/6 h-[100vh] justify-items-center flex flex-col mr-52 fixed bg-white'>
+
+                <div className={`${open ? "w-48" : "hidden"} h-full z-10 sm:containerNav sm:w-1/6 sm:h-[100vh] justify-items-center sm:flex flex-col sm:mr-52 fixed bg-white capitalize`}>
+                    <FiX className={`text-slate-600 bottom-0 top-5 right-5 sm:hidden absolute z-10 rounded-full size-5 hover:bg-slate-400 hover:text-white ${!open && "rotate-180"}`} onClick={() => setOpen(!open)} />
                     <div className='img flex justify-center items-center mt-5'>
-                        <img src="/img/logoNavbar.png" alt="" className='w-[130px] h-[115px]' />
+                        <img src="/img/logoNavbar.png" className='w-[130px] h-[115px]' />
                     </div>
                     <div className="listNav text-white decoration list-none mt-[4vh]">
                         <li className=' py-[0.5vh] mt-[5vh] ml-8 '>
-                            <button className='w-[18.3] h-full flex flex-row items-start justify-center  '>
-                                <img src="/img/imgNavbar/dashboard 1.png" className='w-full h-[24px] mr-2' alt="" />
-                                <p className='text-black '>dashboard</p>
-                            </button>
+                            <Link to="/Dashboard">
+                                <button className='w-[18.3] h-full flex flex-row items-start justify-center  '>
+                                    <img src="/img/imgNavbar/dashboard 1.png" className='w-full h-[24px] mr-2' alt="" />
+                                    <p className='text-black capitalize'>dashboard</p>
+                                </button>
+                            </Link>
                         </li>
                         <li className=' py-[0.5vh] mt-[5vh] ml-8  '>
-                            <button className='w-[18.3] h-full flex flex-row items-start justify-center'>
-                                <img src="/img/imgNavbar/writer 1.png" className='w-full h-[24px] mr-2' alt="" />
-                                <p className='text-black '>editor</p>
-                            </button>
+                            <Link to="/editor">
+                                <button className='w-[18.3] h-full flex flex-row items-start justify-center'>
+                                    <img src="/img/imgNavbar/writer 1.png" className='w-full h-[24px] mr-2' alt="" />
+                                    <p className='text-black capitalize'>editor</p>
+                                </button>
+                            </Link>
                         </li>
                         <li className=' py-[0.5vh] mt-[5vh] ml-8 '>
-                            <button className='w-[18.3] h-full flex flex-row items-start justify-center'>
-                                <img src="/img/imgNavbar/jadwal.png" className='w-full h-[24px] mr-2' alt="" />
-                                <p className=' text-black'>jadwal</p>
-                            </button>
+                            <Link to="/jadwal">
+                                <button className='w-[18.3] h-full flex flex-row items-start justify-center'>
+                                    <img src="/img/imgNavbar/jadwal.png" className='w-full h-[24px] mr-2' alt="" />
+                                    <p className=' text-black capitalize'>jadwal</p>
+                                </button>
+                            </Link>
+                        </li>
+                        <li className=' py-[0.5vh] mt-[5vh] ml-8 '>
+                            <Link to="/database">
+                                <button className='w-[18.3] h-full flex flex-row items-start justify-center'>
+                                    <img src="/img/imgNavbar/database 1.png" className='w-full h-[24px] mr-2' alt="" />
+                                    <p className=' text-black capitalize'>database</p>
+                                </button>
+                            </Link>
                         </li>
                         <li className=' py-[0.5vh] mt-[5vh] ml-8 border-r-2 border-solid border-[rgba(16,92,140,1)]'>
-                            <button className='w-[18.3] h-full flex flex-row items-start justify-center'>
-                                <img src="/img/imgNavbar/database 1.png" className='w-full h-[24px] mr-2' alt="" />
-                                <p className=' text-black'>database</p>
-                            </button>
+                            <Link to="/tentangKami">
+                                <button className='w-[18.3] h-full flex flex-row items-start justify-center'>
+                                    <img src="/img/imgNavbar/tentang kami.png" className='w-[24px] h-[24px] mr-2' alt="" />
+                                    <p className=' text-black capitalize'>tentang kami</p>
+                                </button>
+                            </Link>
                         </li>
                         <li className=' py-[0.5vh] mt-[5vh] ml-8 '>
-                            <button className='w-[18.3] h-full flex flex-row items-start justify-center'>
-                                <img src="/img/imgNavbar/tentang kami.png" className='w-[24px] h-[24px] mr-2' alt="" />
-                                <p className=' text-black'>tentang kami</p>
-                            </button>
-                        </li>
-                        <li className=' py-[0.5vh] mt-[5vh] ml-8 '>
-                            <button className='w-[18.3] h-full flex flex-row items-start justify-center'>
-                                <img src="/img/imgNavbar/bantuan.png" className='w-full h-[24px] mr-2' alt="" />
-                                <p className=' text-black'>bantuan</p>
-                            </button>
+                            <Link to="/bantuan">
+                                <button className='w-[18.3] h-full flex flex-row items-start justify-center'>
+                                    <img src="/img/imgNavbar/bantuan.png" className='w-full h-[24px] mr-2' alt="" />
+                                    <p className=' text-black capitalize'>bantuan</p>
+                                </button>
+                            </Link>
                         </li>
                     </div>
                 </div>
                 {/* navigation End  */}
 
 
-                <div className="containerIsi pl-32 mt-10 mb-20 ml-52 mr-0 ">
+                <div className="containerIsi p-4 sm:pl-32 w-full mt-0 sm:mt-10 mb-32 mx-auto sm:ml-52 sm:mr-0 ">
 
                     {/* top container */}
-                    <div className="containerTop flex flex-row justify-between w-[70vw]">
-                        <h1 className="text-4xl font-bold mr-auto my-auto">
+                    <div className="containerTop flex flex-row justify-between w-full">
+                        {/* button nav */}
+
+                        <FiMenu className='text-slate-600 top-0 bottom-0 my-auto mr-4 sm:hidden' onClick={() => setOpen(!open)} />
+
+                        {/* button nav end */}
+                        <h1 className="sm:text-4xl text-2xl font-bold mr-auto my-auto">
                             Perkembangan Anak
                         </h1>
                         <div className="containerInput mr-5 my-auto justify-center items-center flex">
-                            <input type="text" placeholder='cari....' className="bg-white rounded-sm outline-0 h-5 px-5 py-5 rounded-t-xl rounded-b-xl" />
+                            <input type="text" placeholder='cari....' className={`${open2 ? "block absolute w-auto" : "hidden"}  shadow appearance-none border rounded left-4  py-2 px-3  text-gray-700 focus:outline-none focus:shadow-outline sm:flex bg-white sm:rounded-sm sm:outline-0 sm:h-5 sm:px-5 sm:py-5 sm:rounded-t-xl sm:rounded-b-xl `} />
                         </div>
-                        <div className="containerLogo flex flex-row w-32 mr-3 justify-center items-center">
-                            <div className="containerBell  rounded-md bg-[rgba(16,92,140,1)] px-1 flex mx-[15px] p-1">
+                        <div className="containerLogo align-middle float-right relative sm:float-none flex flex-row w-32  sm:justify-center sm:items-center">
+                            <FaSearch className='text-slate-600  my-auto  text-3xl sm:hidden' onClick={() => setsrc(!open2)} />
+                            <Link to={"/notifikasi"}><div className="containerBell  rounded-md bg-[rgba(16,92,140,1)] px-1 flex mx-[15px] p-1">
                                 <img src="/img/imgDashboard/bell 4.png" alt="" className="h-[30px] w-[30px]" />
                             </div>
+                            </Link>
                             <div className="containerProfil">
-                                <img src="/img/imgDashboard/Female Profile.png" alt="" className="w-[40px] h-[40px] " />
+                                <Link to={"/halamanPengguna"}><img src="/img/imgDashboard/Female Profile.png" alt="" className="w-[40px] h-[40px] " /></Link>
                             </div>
                         </div>
                     </div>
                     {/* Top container end*/}
+                    <div className='content-center px-10 mt-20 max-w-9xl flex space-x-16'>
+                        <div className='mt-2 w-56'>
+                            <div className="bg-blue-900  overflow-hidden shadow-lg text-center text-white w-64 px-8 py-2">Nama Anak Terdaftar</div>
 
-                    <div className='content-center mt-20 max-w-9xl '>
-                        <div className='float-left'>
-                            <div className="bg-blue-900  overflow-hidden shadow-lg text-center text-white max-w-64 px-8 py-2">Nama Anak Terdaftar</div>
-
-                            <div className="  overflow-hidden shadow-lg max-w-64	bg-white py-36">
+                            <div className="  overflow-hidden shadow-lg w-64 bg-white py-36">
                                 {/* kosong dulu ya gess */}
                             </div>
                         </div>
-                        <div className='w-3/5 text-sm	 text-blue-900 float-right font-semibold mt-2 px-4 py-4 bg-white'>
+                        <div className='w-9/12 text-sm text-blue-900 font-semibold mt-2 px-4 py-4 bg-white'>
                             <label >Berat Badan</label><br />
                             <input className="bg-slate-200 rounded-md outline-0 h-5 px-5 py-5 w-32 mb-3" readOnly /><br />
                             <label >Tinggi Badan</label><br />
                             <input className="bg-slate-200 rounded-md outline-0 h-5 px-5 py-5 w-32 mb-3" readOnly /><br />
                             <div className='my-5'>
                                 <label className='mr-5'>Tampilkan Grafik berdasarkan riwayat</label>
-                            <input type="checkbox" /><br />
+                                <input type="checkbox" /><br />
                             </div>
                             <label >Deskripsi</label><br />
                             <input className="bg-slate-200 rounded-md outline-0 h-48 px-5 py-5 w-full mb-3" readOnly /><br />
                             <label >Rekomendasi Makanan Penambah Nutrisi</label><br />
                             <div className='inline-grid grid-cols-4 gap-4'>
-                            <img src="/img/Add File.png" className='w-12 mr-1' />
-                            <img src="/img/Add File.png" className='w-12 mr-1' />
-                            <img src="/img/Add File.png" className='w-12 mr-1' />
-                            <img src="/img/Add File.png" className='w-12 mr-1' />
+                                <img src="/img/Add File.png" className='w-12 mr-1' />
+                                <img src="/img/Add File.png" className='w-12 mr-1' />
+                                <img src="/img/Add File.png" className='w-12 mr-1' />
+                                <img src="/img/Add File.png" className='w-12 mr-1' />
                             </div>
-                        </div>           
+                        </div>
                     </div>
                     <button className='bg-blue-900 text-white px-5 py-3 mt-8 rounded-t-xl rounded-b-xl float-right'>Kirim</button>
                 </div>

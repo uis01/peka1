@@ -90,11 +90,12 @@ function IdentitasAnak() {
                         </div>
                         <div className="containerLogo align-middle float-right relative sm:float-none flex flex-row w-32  sm:justify-center sm:items-center">
                             <FaSearch className='text-slate-600  my-auto  text-3xl sm:hidden' onClick={() => setsrc(!open2)} />
-                            <div className="containerBell  rounded-md bg-[rgba(16,92,140,1)] px-1 flex mx-[15px] p-1">
+                            <Link to={"/notifikasi"}><div className="containerBell  rounded-md bg-[rgba(16,92,140,1)] px-1 flex mx-[15px] p-1">
                                 <img src="/img/imgDashboard/bell 4.png" alt="" className="h-[30px] w-[30px]" />
                             </div>
+                            </Link>
                             <div className="containerProfil">
-                                <img src="/img/imgDashboard/Female Profile.png" alt="" className="w-[40px] h-[40px] " />
+                                <Link to={"/halamanPengguna"}><img src="/img/imgDashboard/Female Profile.png" alt="" className="w-[40px] h-[40px] " /></Link>
                             </div>
                         </div>
                     </div>

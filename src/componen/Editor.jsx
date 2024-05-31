@@ -11,7 +11,6 @@ function Editor() {
 
     const [open, setOpen] = useState(false);
     const [open2, setsrc] = useState(false);
-
     const [image, setImage] = useState(null);
     const [preview, setPreview] = useState(null);
 
@@ -108,18 +107,19 @@ function Editor() {
                         </div>
                         <div className="containerLogo align-middle float-right relative sm:float-none flex flex-row w-32  sm:justify-center sm:items-center">
                             <FaSearch className='text-slate-600  my-auto  text-3xl sm:hidden' onClick={() => setsrc(!open2)} />
-                            <div className="containerBell  rounded-md bg-[rgba(16,92,140,1)] px-1 flex mx-[15px] p-1">
+                            <Link to={"/notifikasi"}><div className="containerBell  rounded-md bg-[rgba(16,92,140,1)] px-1 flex mx-[15px] p-1">
                                 <img src="/img/imgDashboard/bell 4.png" alt="" className="h-[30px] w-[30px]" />
                             </div>
+                            </Link>
                             <div className="containerProfil">
-                                <img src="/img/imgDashboard/Female Profile.png" alt="" className="w-[40px] h-[40px] " />
+                                <Link to={"/halamanPengguna"}><img src="/img/imgDashboard/Female Profile.png" alt="" className="w-[40px] h-[40px] " /></Link>
                             </div>
                         </div>
                     </div>
                     {/* Top container end*/}
 
                     {/* content  */}
-                    <div className='flex flex-row'>
+                    <div className='flex flex-row px-10 mt'>
                         <div className='flex flex-col w-full '>
                             <div className=' h-32 w-full flex  items-center'>
                                 <input type="text" placeholder='' className="bg-white rounded-sm outline-0 border border-[rgba(16,92,140,1)] h-5 w-2/3 py-5 ml-2 rounded-t-xl rounded-b-xl" />
