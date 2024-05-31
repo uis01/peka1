@@ -17,6 +17,8 @@ import Notifikasi from './componen/notifikasi';
 import Bantuan from './componen/bantuan';
 import PerkembanganAnak from './componen/perkembanganAnak';
 import HalamanPengguna from './componen/halamanPengguna';
+import RiwayatPengecekan from './componen/riwayatPengecekan';
+
 
 
 function App() {
@@ -50,6 +52,8 @@ function App() {
         <Route path="PerkembanganAnak" element={<PerkembanganAnak/>}>
         </Route>
         <Route path="HalamanPengguna" element={<HalamanPengguna/>}>
+        </Route>
+        <Route path="RiwayatPengecekan" element={<RiwayatPengecekan/>}>
         </Route>
       </Routes>
     </Router>

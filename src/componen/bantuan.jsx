@@ -20,7 +20,7 @@ function Bantuan() {
                         <img src="/img/logoNavbar.png" className='w-[130px] h-[115px]' />
                     </div>
                     <div className="listNav text-white decoration list-none mt-[4vh]">
-                        <li className=' py-[0.5vh] mt-[5vh] ml-8 border-r-2 border-solid border-[rgba(16,92,140,1)]'>
+                        <li className=' py-[0.5vh] mt-[5vh] ml-8 '>
                             <Link to="/Dashboard">
                                 <button className='w-[18.3] h-full flex flex-row items-start justify-center  '>
                                 <img src="/img/imgNavbar/dashboard 1.png" className='w-full h-[24px] mr-2' alt="" />
@@ -60,7 +60,7 @@ function Bantuan() {
                             </button>
                             </Link>
                         </li>
-                        <li className=' py-[0.5vh] mt-[5vh] ml-8 '>
+                        <li className=' py-[0.5vh] mt-[5vh] ml-8 border-r-2 border-solid border-[rgba(16,92,140,1)]'>
                         <Link to="/bantuan">
                             <button className='w-[18.3] h-full flex flex-row items-start justify-center'>
                                 <img src="/img/imgNavbar/bantuan.png" className='w-full h-[24px] mr-2' alt="" />
@@ -73,7 +73,7 @@ function Bantuan() {
                 {/* navigation End  */}
 
 
-                <div className="containerIsi p-4 sm:pl-32 mt-0 sm:mt-10 mb-20 mx-auto sm:ml-52 sm:mr-0 ">
+                <div className="containerIsi p-4 sm:pl-32 mt-0 w-full sm:mt-10 mb-20 mx-auto sm:ml-52 sm:mr-0 ">
 
                     {/* top container */}
                     <div className="containerTop flex flex-row justify-between w-full">
@@ -83,10 +83,10 @@ function Bantuan() {
                 
                     {/* button nav end */}
                         <h1 className="sm:text-4xl text-2xl font-bold mr-auto my-auto">
-                            Dashboard
+                            Bantuan
                         </h1>
                         <div className="containerInput mr-5 my-auto justify-center items-center flex">
-                            <input type="text" placeholder='cari....' className={`${open2 ? "block absolute w-auto" : "hidden"}  shadow appearance-none border rounded left-4  py-2 px-3  text-gray-700 focus:outline-none focus:shadow-outline sm:flex bg-slate-200 sm:rounded-sm sm:outline-0 sm:h-5 sm:px-5 sm:py-5 sm:rounded-t-xl sm:rounded-b-xl `}/>
+                            <input type="text" placeholder='cari....' className={`${open2 ? "block absolute w-auto" : "hidden"}  shadow appearance-none border rounded left-4  py-2 px-3  text-gray-700 focus:outline-none focus:shadow-outline sm:flex bg-white sm:rounded-sm sm:outline-0 sm:h-5 sm:px-5 sm:py-5 sm:rounded-t-xl sm:rounded-b-xl `}/>
                         </div>
                         <div className="containerLogo align-middle float-right relative sm:float-none flex flex-row w-32  sm:justify-center sm:items-center">
                         <FaSearch className='text-slate-600  my-auto  text-3xl sm:hidden' onClick={() => setsrc (!open2)}/>
@@ -99,7 +99,7 @@ function Bantuan() {
                         </div>
                     </div>
                     {/* Top container end*/}
-                    <div className='content-center mt-20 w-full bg-white'>
+                    <div className='content-center mx-auto mt-20 w-4/5 bg-white'>
                         <p className='text-center text-3xl font-bold m-2'>Frequently Asked Questions</p>
                         <div className=" overflow-hidden max-w-3xl m-auto mb-5 p-5 grid grid-cols-2 gap-3 ">
                             <div className='max-w-96 p-2 bg-slate-200'>
