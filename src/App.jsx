@@ -16,6 +16,8 @@ import JadwalCekBalita from './componen/jadwalCekBalita';
 import Notifikasi from './componen/notifikasi';
 import Bantuan from './componen/bantuan';
 import PerkembanganAnak from './componen/perkembanganAnak';
+import HalamanPengguna from './componen/halamanPengguna';
+
 
 function App() {
   return (
@@ -46,6 +48,8 @@ function App() {
         <Route path="Bantuan" element={<Bantuan/>}>
         </Route>
         <Route path="PerkembanganAnak" element={<PerkembanganAnak/>}>
+        </Route>
+        <Route path="HalamanPengguna" element={<HalamanPengguna/>}>
         </Route>
       </Routes>
     </Router>
